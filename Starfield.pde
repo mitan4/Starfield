@@ -1,4 +1,4 @@
-Particle[] bob = new Particle[400];
+Particle[] bob = new Particle[500];
 void setup(){
   size(400,400);
   for(int i = 0; i < 10; i++)
@@ -27,12 +27,13 @@ void draw(){
     bob[i].show();
   }
 }
+
 class Particle{
   double myX, myY, myAngle, mySpeed;
   int myColor;
   Particle(){
     myX = 200;
-    myY = 200;
+    myY = 203;
     myAngle = Math.random()*2*Math.PI;
     mySpeed = (Math.random()*7)+1;
     myColor = color((int)(Math.random()*20)+235, (int)(Math.random()*255), (int)(Math.random()*255));
@@ -52,7 +53,7 @@ class Particle{
 class OddballParticle extends Particle{
   OddballParticle(){
     myX = 200;
-    myY = 200;
+    myY = 203;
     myAngle = Math.random()*2*Math.PI;
     mySpeed = (Math.random()*7)+1;
     myColor = color(176, (int)(Math.random()*32)+200, (int)(Math.random()*42)+190);
